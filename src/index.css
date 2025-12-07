@@ -1,0 +1,33 @@
+/* Google Font - Geist & Geist Mono */
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-geist: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-geist);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  @apply text-white bg-zinc-900;
+}
+
+/* Form */
+.label {
+  @apply block text-zinc-200 text-sm font-normal mb-2;
+}
+
+.text-field {
+  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-rose-500;
+}
+
+.text-field::placeholder {
+  @apply text-zinc-400;
+}
