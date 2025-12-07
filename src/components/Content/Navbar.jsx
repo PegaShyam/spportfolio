@@ -32,13 +32,13 @@ const Navbar = () => {
 
           {/* CENTER */}
           <div className="hidden w-1/3 lg:flex items-center justify-center">
-            <ul className="text-sm bg-zinc-600/30 border-2 border-zinc-700/30 backdrop-blur-lg rounded-xl flex items-center gap-0">
+            <ul className="text-sm bg-zinc-600/30 border-2 border-zinc-700/30 backdrop-blur-lg rounded-xl flex items-center gap-0 py-1">
               {NAVLINKS.map(({ name, link }, index) => (
                 <li key={index} className="px-2 py-3">
                   <HashLink
                     smooth
                     to={link}
-                    className="text-zinc-300 bg-transparent rounded-lg px-4 py-3"
+                    className="text-zinc-300 bg-transparent hover:text-black hover:bg-white rounded-xl px-4 py-3 transition-all duration-300"
                   >
                     {name}
                   </HashLink>
