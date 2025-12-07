@@ -1,1 +1,0 @@
-import{j as e}from"./index-BkZY8z3Z.js";const t=()=>e.jsx("div",{className:"w-full h-screen flex items-center justify-center",children:e.jsx("h1",{className:"text-3xl lg:text-5xl text-transparent bg-clip-text bg-linear-to-r from-white to-zinc-400",children:"Coming Soon."})}),n=()=>e.jsx(e.Fragment,{children:e.jsx(t,{})});export{n as default};
